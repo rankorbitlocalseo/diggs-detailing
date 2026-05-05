@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mistakes to Avoid When Choosing Car Detailing | Diggs Mobile Auto Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-green: #0a2e1f;
+            --dark-green-light: #1a4a33;
+            --black: #111111;
+            --black-light: #1a1a1a;
+            --white: #ffffff;
+            --off-white: #f5f5f5;
+            --gray-100: #f0f0f0;
+            --gray-200: #e0e0e0;
+            --gray-600: #666666;
+            --gray-700: #444444;
+            --gray-900: #222222;
+            --accent-green: #2d6a4f;
+            --accent-green-light: #40916c;
+            --text-body: #333333;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--off-white);
+            color: var(--text-body);
+            line-height: 1.65;
+            min-height: 100vh;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: var(--black);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 0 2rem;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .nav-logo img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray-200);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            transition: color 0.25s;
+        }
+
+        .nav-links a:hover { color: var(--accent-green-light); }
+
+        .hero {
+            margin-top: 70px;
+            padding: 80px 2rem 60px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--black) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 40% at 50% 90%, rgba(45,106,79,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-eyebrow {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent-green-light);
+            margin-bottom: 1.5rem;
+            padding: 0.35rem 1.2rem;
+            border: 1px solid rgba(45,106,79,0.4);
+            border-radius: 40px;
+            background: rgba(45,106,79,0.12);
+        }
+
+        .hero h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            max-width: 950px;
+            margin: 0 auto 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--accent-green-light);
+            border-bottom: 2px solid var(--accent-green-light);
+        }
+
+        .hero-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--gray-200);
+            font-weight: 400;
+        }
+
+        .hero-meta span { display: flex; align-items: center; gap: 0.4rem; }
+        .hero-divider {
+            width: 1px;
+            height: 16px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .article-with-sidebar {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 3rem 2rem 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .main-article {
+            flex: 2;
+            min-width: 280px;
+        }
+
+        .sidebar-desktop {
+            flex: 1;
+            min-width: 280px;
+            position: sticky;
+            top: 90px;
+            align-self: start;
+        }
+
+        .map-widget {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 1.25rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        .map-widget h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-green);
+            padding-left: 0.9rem;
+        }
+
+        .map-widget iframe {
+            width: 100%;
+            min-height: 260px;
+            border-radius: 12px;
+            border: 0;
+        }
+
+        .mobile-map {
+            display: none;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .intro-block {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-left: 4px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--gray-700);
+            line-height: 1.7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .intro-block a {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(45,106,79,0.3);
+        }
+
+        .intro-block a:hover {
+            color: var(--dark-green);
+            border-bottom-color: var(--accent-green);
+        }
+
+        .prose p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: var(--gray-700);
+            line-height: 1.75;
+        }
+
+        .prose h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin: 2.5rem 0 1rem;
+            letter-spacing: -0.01em;
+            border-bottom: 2px solid var(--gray-200);
+            padding-bottom: 0.5rem;
+        }
+
+        .checklist-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .checklist-card h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checklist-card ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .checklist-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--gray-700);
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .check-icon svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .pull-quote {
+            margin: 2.5rem 0;
+            padding: 2rem 2rem;
+            background: linear-gradient(135deg, rgba(10,46,31,0.03) 0%, rgba(45,106,79,0.05) 100%);
+            border-left: 4px solid var(--accent-green);
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+        }
+
+        .pull-quote p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--dark-green);
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        .stat-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .stat-number {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .stat-number span {
+            color: var(--dark-green);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .highlight-box {
+            background: var(--black);
+            border-radius: 16px;
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--accent-green-light);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--black) 100%);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            margin: 3.5rem 0 0;
+        }
+
+        .cta-section h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.75);
+            font-size: 1rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.85rem 2.2rem;
+            background: var(--accent-green);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 40px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-green-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(45,106,79,0.3);
+        }
+
+        .cta-contact {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-contact a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .cta-contact a:hover { color: var(--accent-green-light); }
+
+        .back-link-container {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 40px;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-700);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .back-nav-btn:hover {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+            color: var(--white);
+            transform: translateX(-4px);
+        }
+
+        footer {
+            background: var(--black);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-logo img {
+            height: 45px;
+            margin: 0 auto 1rem;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-200);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent-green-light); }
+
+        .footer-copy {
+            color: var(--gray-600);
+            font-size: 0.8rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 860px) {
+            .article-with-sidebar {
+                flex-direction: column;
+                padding: 2rem 1.25rem 60px;
+            }
+            .sidebar-desktop {
+                display: none;
+            }
+            .mobile-map {
+                display: block;
+            }
+            .hero { padding: 60px 1.25rem 50px; }
+            .stat-strip { grid-template-columns: 1fr; gap: 1rem; }
+            .cta-section { padding: 2rem 1.5rem; }
+            .nav-links { gap: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://diggsmobileautocare.com/" class="nav-logo">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/78fce5cb-6cc1-4d63-c2dc-b7f0d32cba00/publicContain" alt="Diggs Mobile Auto Care Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="https://diggsmobileautocare.com/" target="_blank">Home</a></li>
+            <li><a href="https://diggsmobileautocare.com/#services" target="_blank">Services</a></li>
+            <li><a href="tel:7573892524" target="_blank">Call Now</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-eyebrow">Car Care Guide</div>
+        <h1>What Mistakes Should You Avoid When Choosing a <em>Car Detailing Service?</em></h1>
+        <div class="hero-meta">
+            <span>📍 Chesapeake, VA</span>
+            <div class="hero-divider"></div>
+            <span>7 min read</span>
+            <div class="hero-divider"></div>
+            <span>Diggs Mobile Auto Care</span>
+        </div>
+    </div>
+
+    <div class="article-with-sidebar">
+        <div class="main-article">
+            <div class="back-link-container reveal">
+                <a href="https://diggsmobileautocare.com/" class="back-nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    <span>← Back to Home</span>
+                </a>
+            </div>
+
+            <!-- INTRO: primary keyword linked to GMB -->
+            <div class="intro-block reveal">
+                Your car is one of the biggest investments you'll make. So when it's time to get it detailed, you want someone who will treat it right. Finding a <a href="https://maps.app.goo.gl/4h9i5wynsy1JvhwRA" target="_blank" rel="noopener noreferrer"><strong>trustworthy professional car detailing service</strong></a> isn't always as easy as it sounds. There are plenty of options out there, but not all of them deliver what they promise. Some cut corners. Some charge hidden fees. And some just don't care about quality. Knowing what mistakes to avoid can save you from wasting money and ending up with a car that looks barely better than when you dropped it off.
+            </div>
+
+            <div class="prose">
+                <p class="reveal">A good detail makes your car feel brand new again. A bad one leaves you frustrated and still looking at swirl marks, dirty carpets, or missed spots. I've talked to dozens of car owners who wished they'd asked more questions before handing over their keys. Let's walk through the most common mistakes so you can skip the headache and find a detailer who actually delivers.</p>
+
+                <h2 class="reveal">Mistake #1: Booking based on price alone</h2>
+                <p class="reveal">We all love a good deal. But when it comes to detailing, rock bottom prices usually mean rock bottom quality. A detailer charging fifty bucks for a full interior and exterior is probably using harsh chemicals, skipping important steps, or rushing through the job. Real detailing takes time. A proper full detail can take three or four hours. If the price seems too good to be true, it almost always is.</p>
+
+                <div class="checklist-card reveal">
+                    <h4>🔍 What a real detail should include</h4>
+                    <ul>
+                        <li><div class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5L5 9L9.5 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div> Thorough interior vacuum and carpet extraction</li>
+                        <li><div class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5L5 9L9.5 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div> Hand wash, not just a spray and wipe</li>
+                        <li><div class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5L5 9L9.5 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div> Upholstery and leather cleaning and conditioning</li>
+                        <li><div class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5L5 9L9.5 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div> Attention to door jambs, vents, and tight spaces</li>
+                    </ul>
+                </div>
+
+                <h2 class="reveal">Mistake #2: Ignoring reviews and reputation</h2>
+                <p class="reveal">A detailer can promise the world, but past customers will tell you the truth. Skip the five star reviews that just say "great job" without details. Look for reviews that mention specific things like attention to detail, punctuality, and whether the detailer actually cleaned the areas they said they would. A consistent pattern of happy customers is worth more than any advertisement.</p>
+
+                <div class="stat-strip reveal">
+                    <div class="stat-item"><div class="stat-number">84<span>%</span></div><div class="stat-label">trust online reviews as much as personal recommendations</div></div>
+                    <div class="stat-item"><div class="stat-number">4.8<span>★</span></div><div class="stat-label">minimum rating for trusted detailers</div></div>
+                    <div class="stat-item"><div class="stat-number">50+<span></span></div><div class="stat-label">reviews give you a real picture of quality</div></div>
+                </div>
+
+                <h2 class="reveal">Mistake #3: Not asking about products and equipment</h2>
+                <p class="reveal">What a detailer uses matters. Cheap, harsh chemicals can damage your paint, dry out your leather, or leave residue everywhere. A professional uses quality products designed for automotive surfaces. They should also have proper equipment like steam cleaners, extractors, and soft microfiber towels. Don't be shy about asking what they use and why.</p>
+
+                <div class="pull-quote reveal"><p>I've seen cars come out of cheap detail shops with hazy windows, greasy dashboards, and water spots baked into the paint. The detailer used dish soap and a dirty rag. That's not detailing. That's just a wet car. Good work requires good tools and good products.</p></div>
+
+                <h2 class="reveal">Mistake #4: Choosing a shop that doesn't come to you</h2>
+                <p class="reveal">Mobile detailing is a game changer. A service that comes to your home or office saves you hours of waiting around. You don't have to drop your car off, find a ride, and then come back later. You just park, hand over the keys, and go about your day. Mobile detailers also bring their own water and power, so they don't need anything from you.</p>
+
+                <h2 class="reveal">Mistake #5: Not checking what's included in the price</h2>
+                <p class="reveal">Some detailers advertise a low price, then charge extra for everything else. Want the wheels cleaned? Extra. Want the door jambs wiped? Extra. Pet hair removal? Definitely extra. Before you book, ask for a clear list of what's included in the package. A transparent detailer will tell you up front. A shady one will surprise you at the end.</p>
+
+                <div class="highlight-box">
+                    <h3>Questions to ask before booking</h3>
+                    <p>✓ What's included in your interior detail?<br>
+                    ✓ Do you use steam cleaning or just spray and wipe?<br>
+                    ✓ What brand of products do you use?<br>
+                    ✓ Are there any hidden fees or surcharges?<br>
+                    ✓ How long will the service take?<br>
+                    ✓ Do you offer any warranty or satisfaction guarantee?</p>
+                </div>
+
+                <h2 class="reveal">Mistake #6: Forgetting about add-ons and extras</h2>
+                <p class="reveal">Sometimes the basic package isn't enough. If your car has heavy stains, pet hair everywhere, or foggy headlights, you might need extra services. A good detailer will offer add-ons like odor elimination, leather conditioning, headlight restoration, and engine bay cleaning. Ask about these upfront so you're not disappointed when the basic detail doesn't fix everything.</p>
+
+                <h2 class="reveal">Mistake #7: Waiting too long between details</h2>
+                <p class="reveal">A one time detail is great, but regular maintenance is what keeps your car looking good. Some people wait until their car is trashed before calling a detailer. That makes the job harder and more expensive. A maintenance detail every couple of months preserves your paint, protects your interior, and actually costs less in the long run.</p>
+
+                <h2 class="reveal">Mistake #8: Not checking if they're insured and professional</h2>
+                <p class="reveal">Anyone can call themselves a detailer. But professionals carry insurance. That matters. If something gets damaged accidentally, you want to know you're covered. Also look for signs of professionalism like clear communication, arriving on time, and having a system for booking and payment.</p>
+
+                <h2 class="reveal">Mistake #9: Overlooking the importance of communication</h2>
+                <p class="reveal">Does the detailer answer your questions clearly? Do they listen to your concerns? Do they explain what they'll do and how long it will take? Good communication before the job usually means good communication during and after. If they're hard to reach or vague with answers, that's a red flag.</p>
+
+                <h2 class="reveal">Mistake #10: Not getting a satisfaction guarantee</h2>
+                <p class="reveal">A confident detailer stands behind their work. They should offer to make things right if you're not happy. That's not being picky. That's expecting what you paid for. Ask about their guarantee before you book. A simple "we'll fix any missed spots" goes a long way.</p>
+
+                <h2 class="reveal">Conclusion</h2>
+                <p class="reveal">Choosing the right car detailing service isn't complicated, but it does take a little homework. Avoid the mistake of shopping by price alone. Read real reviews from real customers. Ask about products, equipment, and what's included. And don't underestimate the value of a mobile service that comes to you. For car owners in Chesapeake, Norfolk, Virginia Beach, and all across Hampton Roads, <a href="https://diggsmobileautocare.com/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-green); font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--accent-green);"><strong>Diggs Mobile Auto Care</strong></a> checks every box. Professional equipment, transparent pricing, and a satisfaction guarantee that actually means something. Plus, they come to your driveway. No waiting rooms. No wasted time. Just showroom quality results while you relax at home or work. Book a detail today and see the difference a real professional makes.</p>
+            </div>
+
+            <!-- MOBILE MAP SECTION -->
+            <div class="mobile-map reveal">
+                <div class="map-widget">
+                    <h4>📍 Find Us on Google Maps</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408234.70737374754!2d-76.3642165!3d36.9301935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864f23e149864f1%3A0x25949c3cd404e619!2sDiggs%20Mobile%20Auto%20Care!5e0!3m2!1sen!2s!4v1778015135316!5m2!1sen!2s" allowfullscreen="" loading="lazy" style="border:0; width:100%; min-height:260px;"></iframe>
+                    <p style="font-size:0.8rem; margin-top:0.8rem; color: var(--gray-600);">2404 Sir Lance Dr, Chesapeake, VA 23325, USA</p>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://maps.app.goo.gl/4h9i5wynsy1JvhwRA" target="_blank" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">Open in Google Maps →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA SECTION -->
+            <div class="cta-section reveal">
+                <h2>Ready to give your car the attention it deserves?</h2>
+                <p>Don't settle for a rushed, low quality detail. Diggs Mobile Auto Care brings professional equipment and years of experience right to your driveway. Book online in under 30 seconds.</p>
+                <a href="https://diggsmobileautocare.com/" class="cta-btn">Visit Diggs Mobile Auto Care</a>
+                <div class="cta-contact">
+                    <a href="tel:7573892524">📞 (757) 389-2524</a>
+                    <a href="https://diggsmobileautocare.com/">🌐 diggsmobileautocare.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESKTOP SIDEBAR WITH MAP -->
+        <aside class="sidebar-desktop">
+            <div class="map-widget reveal">
+                <h4>📍 Find Us on Google Maps</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408234.70737374754!2d-76.3642165!3d36.9301935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864f23e149864f1%3A0x25949c3cd404e619!2sDiggs%20Mobile%20Auto%20Care!5e0!3m2!1sen!2s!4v1778015135316!5m2!1sen!2s" style="height:260px; width:100%;" allowfullscreen="" loading="lazy"></iframe>
+                <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--gray-600);"><strong>Diggs Mobile Auto Care</strong><br>2404 Sir Lance Dr, Chesapeake, VA 23325</p>
+                <div style="margin-top: 0.6rem;">
+                    <a href="https://maps.app.goo.gl/4h9i5wynsy1JvhwRA" target="_blank" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">Open in Google Maps →</a>
+                </div>
+            </div>
+            <div style="background: var(--white); border-radius: 16px; padding: 1.2rem; border: 1px solid var(--gray-200);">
+                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: var(--dark-green); margin-bottom: 0.5rem;">✨ Serving Hampton Roads</h4>
+                <p style="font-size: 0.85rem; color: var(--gray-600);">Chesapeake, Norfolk, Virginia Beach, Portsmouth — we come to you. Book your mobile detail today.</p>
+                <a href="tel:7573892524" style="display: inline-block; margin-top: 0.8rem; background: var(--accent-green); color: white; padding: 0.5rem 1rem; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Call (757) 389-2524</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-logo"><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/78fce5cb-6cc1-4d63-c2dc-b7f0d32cba00/publicContain" alt="Diggs Mobile Auto Care"></div>
+        <div class="footer-links">
+            <a href="https://diggsmobileautocare.com/">Website</a>
+            <a href="tel:7573892524">(757) 389-2524</a>
+            <a href="#">2404 Sir Lance Dr, Chesapeake, VA 23325</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Diggs Mobile Auto Care. All rights reserved. Premium Mobile Detailing in Hampton Roads.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(el => {
+                if (el.isIntersecting) {
+                    el.target.classList.add('visible');
+                    observer.unobserve(el.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+```
